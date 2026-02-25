@@ -1,18 +1,34 @@
 # Flexible Notification System
 
 ## Overview
-This repository contains a Java-based Flexible Notification System developed to demonstrate
-professional software design principles, specifically Composition over Inheritance and
-maintainability within the Software Development Lifecycle (SDLC).
+This repository contains a Java-based Flexible Notification System developed
+to demonstrate professional software design principles, specifically
+Composition over Inheritance and maintainability within the Software
+Development Lifecycle (SDLC).
 
-The project shows how a system can evolve over time without requiring rewrites of core logic.
-New notification channels are added by extending the system, not modifying it.
+The project illustrates how software should be viewed as an evolving system.
+New notification channels are added by extending the system rather than
+rewriting core logic, reducing long-term maintenance cost and risk.
 
 ---
+## Repository Structure
 
+flexible-notification-system/
+├── Project04/
+│   ├── src/
+│   ├── README.md
+│   └── UML Diagram
+│
+├── Project05/
+│   ├── src/
+│   └── README.md
+│
+└── README.md
+
+---
 ## Project Structure
-
-This repository contains two related projects:
+This repository contains two related projects that represent different
+phases of the SDLC:
 
 ### Project 04 – Core Notification System
 Implements the base notification framework using:
@@ -24,12 +40,16 @@ Supported notification methods:
 - Email
 - SMS
 
+This project establishes a flexible architecture intended for future
+extension.
+
 ### Project 05 – Maintenance Enhancement
 Extends the existing system by adding:
 - WhatsApp notification support
 
-This enhancement was completed **without modifying** the core `AlertSystem` class or
-the `NotificationMedium` interface, demonstrating proper maintenance practices.
+This enhancement was completed without modifying the core
+AlertSystem class or the NotificationMedium interface, demonstrating
+proper maintenance and evolution practices.
 
 ---
 
@@ -48,10 +68,31 @@ the `NotificationMedium` interface, demonstrating proper maintenance practices.
 
 ---
 
-## Repository Usage
-Each project folder contains:
-- Source code
-- Project-specific README
-- Documentation relevant to that phase of development
+## Testing & Validation
+Each project folder contains a dedicated README file with:
+- Compilation instructions
+- Execution steps
+- Runtime behavior expectations
+- Verification guidelines that allow validation without inspecting source code
 
-This structure follows GitHub best practices for clarity, maintainability, and onboarding.
+This ensures the system can be trusted and evaluated by new developers
+or reviewers.
+
+---
+## Intended Audience
+This repository is structured so that a new developer can:
+- Understand the system architecture
+- Compile and run the software
+- Extend functionality safely
+- Maintain the system without rewrites
+
+---
+
+## Repository Usage
+Each project folder includes:
+- Source code
+- Project-specific documentation
+- Testing and verification guidelines
+
+This structure follows GitHub best practices and allows a new developer
+to understand, run, test, and maintain the software with minimal effort.
