@@ -11,21 +11,6 @@ New notification channels are added by extending the system rather than
 rewriting core logic, reducing long-term maintenance cost and risk.
 
 ---
-## Repository Structure
-
-flexible-notification-system/
-├── Project04/
-│   ├── src/
-│   ├── README.md
-│   └── UML Diagram
-│
-├── Project05/
-│   ├── src/
-│   └── README.md
-│
-└── README.md
-
----
 ## Project Structure
 This repository contains two related projects that represent different
 phases of the SDLC:
